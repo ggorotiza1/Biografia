@@ -1,0 +1,77 @@
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    width: 285px;
+    height: auto;
+    background-color: #242424;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: inherit;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.nombre_pelicula {
+    color: #FFFFFF;
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    align-items: start;
+}
+
+.titulo {
+    color: #FFFFFF;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.fecha_pelicula {
+    color: #959498;
+    text-align: left;
+}
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secundario {
+    flex: 1 0 25%;
+    /* Cada columna ocupa el 25% del ancho del contenedor */
+    /*background-color: #f2f2f2;*/
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .secundario {
+        flex: 1 0 50%;
+        /* Cada columna ocupa el 50% del ancho del contenedor */
+    }
+}
+
+@media (max-width: 480px) {
+    .secundario {
+        flex: 1 0 100%;
+        /* Cada columna ocupa el 100% del ancho del contenedor */
+    }
+}
